@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__link">
+          <svg class="logo" width="70" height="55">
+            <use href="./images/icons.svg#icon-logo" class="logo__icon"></use>
+          </svg>
+        </a>
+        <button type="button" class="mob-menu-btn btn" data-modal-open>
+          <svg width="24" height="16">
+            <use href="./images/icons.svg#icon-menu" class="mob-menu-btn__icon"></use>
+          </svg>
+        </button>
+        <nav class="site-nav">
+          <ul class="site-nav-list">
+            <li class="site-nav-list__item">
+              <a href="#barbershop" class="site-nav__link">About</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#prices" class="site-nav__link">Prices</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#team" class="site-nav__link">Masters</a>
+            </li>
+            <li class="site-nav-list__item">
+              <a href="#contacts" class="site-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="site-contacts-list">
+          <li class="site-contacts-list__item">
+            <a href="#reservation" class="site-contacts__btn-link btn-link btn-link--dark"
+              >Reserve</a
+            >
+          </li>
+          <li class="site-contacts-list__item">
+            <a href="tel:+380441111111" class="site-contacts__link">+38 044 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="mob-menu modal">
+          <button type="button" class="mob-menu__close-btn" data-modal-close>
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close" class="mob-menu__close-icon"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="mob-menu-site-nav">
+              <li class="mob-menu-site-nav__item">
+                <a href="#barbershop" class="mob-menu-site-nav__link">About us</a>
+              </li>
+              <li class="mob-menu-site-nav__item">
+                <a href="#prices" class="mob-menu-site-nav__link">Services and prices</a>
+              </li>
+              <li class="mob-menu-site-nav__item">
+                <a href="#team" class="mob-menu-site-nav__link">Masters</a>
+              </li>
+              <li class="mob-menu-site-nav__item">
+                <a href="#contacts" class="mob-menu-site-nav__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mob-menu-contacts-list">
+            <li class="mob-menu-contacts-list__item">
+              <a href="tel:+380441111111" class="mob-menu-contacts-list__link">+38 044 111 11 11</a>
+            </li>
+            <li class="mob-menu-contacts-list__item">
+              <a href="#reservation" class="mob-menu-contacts-list__btn-link btn-link">Reserve</a>
+            </li>
+          </ul>
+          <ul class="mob-menu-soc-list">
+            <li class="mob-menu-soc-list__item">
+              <a href="" class="mob-menu-soc-list__link">Instagram</a>
+            </li>
+            <li class="mob-menu-soc-list__item">
+              <a href="#" class="mob-menu-soc-list__link">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section hero">
+        <div class="container hero__container">
+          <div class="hero__company-soc-container">
+            <ul class="hero-soc-list">
+              <li class="hero-soc-list__item">
+                <a href="#" class="hero-soc-list__link">Instagram</a>
+              </li>
+              <li class="hero-soc-list__item">
+                <a href="#" class="hero-soc-list__link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hero__content-container">
+            <p class="pre-title pre-title--dark">a hair salon for men in Kyiv</p>
+            <h1 class="page-title hero__title">BarberShop</h1>
+            <p class="hero__after-title">
+              We are experts in trendy man's haircuts. We work quickly, carefully and with taste.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section barbershop" id="barbershop">
+        <div class="container barbershop__container">
+          <div class="barbershop-pictures">
+            <ul class="barbershop-pictures-list pictures-list">
+              <li class="pictures-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/foaming.webp    1x,
+                      ./images/barbershop/desktop/foaming@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/foaming.jpg    1x,
+                      ./images/barbershop/desktop/foaming@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/foaming.webp    1x,
+                      ./images/barbershop/tablet/foaming@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/foaming.jpg    1x,
+                      ./images/barbershop/tablet/foaming@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/barbershop/tablet/foaming.jpg"
+                    alt="barber is foaming client"
+                  />
+                </picture>
+              </li>
+              <li class="pictures-list__item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/shaving.webp    1x,
+                      ./images/barbershop/desktop/shaving@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/desktop/shaving.jpg    1x,
+                      ./images/barbershop/desktop/shaving@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/shaving.webp    1x,
+                      ./images/barbershop/tablet/shaving@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barbershop/tablet/shaving.jpg    1x,
+                      ./images/barbershop/tablet/shaving@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/barbershop/tablet/shaving.jpg"
+                    alt="barber is shaving client"
+                    width="330"
+                    height="265"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="barbershop-content">
+            <p class="pre-title">About us</p>
+            <h2 class="section__title barbershop__title">Best Barbershop of your city</h2>
+            <p class="after-title barbershop__after-title">
+              If you want to add more confidence to your image, you are definitely in the right
+              place.
+            </p>
+            <p class="section-text barbershop__text">
+              We are the team that never rests on its laurels and yearns for change.And when you get
+              into the hands of our master, you can never be the same again. We are the team, that
+              is always on the same page with clients. Therefore, we are ready to improve everyone
+              who comes to us!
+            </p>
+            <a href="#reservation" class="btn-link reservation-link">Reserve</a>
+          </div>
+        </div>
+      </section>
+      <section class="section prices" id="prices">
+        <div class="container">
+          <p class="pre-title pre-title--dark">Spend time in the company of the best masters</p>
+          <h2 class="section__title section__title--dark prices__title">Services and prices</h2>
+          <ul class="prices-list">
+            <li class="prices-list__item">Man haircut <span class="price">from 300 UAH</span></li>
+            <li class="prices-list__item">Beard tream <span class="price">from 200 UAH</span></li>
+            <li class="prices-list__item">
+              Mustache haircut <span class="price">from 200 UAH</span>
+            </li>
+            <li class="prices-list__item">
+              Shaving with straight razor <span class="price">from 200 UAH</span>
+            </li>
+            <li class="prices-list__item">
+              Haircut from intern <span class="price">from 50 UAH</span>
+            </li>
+            <li class="prices-list__item">
+              Haircut under the nozzle <span class="price">from 200 UAH</span>
+            </li>
+            <li class="prices-list__item">
+              Child haircut (under 12 years) <span class="price">from 300 UAH</span>
+            </li>
+            <li class="prices-list__item">
+              Gray hair camouflage <span class="price">from 200 UAH</span>
+            </li>
+          </ul>
+          <a href="#reservation" class="btn-link prices-btn-link btn-link--dark">Reserve</a>
+        </div>
+      </section>
+      <section class="section advantages">
+        <div class="container advantages__container">
+          <div class="advantages-description__wrapper">
+            <p class="pre-title">Old traditional school</p>
+            <h2 class="section__title advantages__title">Why come to us?</h2>
+            <p class="after-title advantages__after-title">
+              Only good things are said about us. But it's better to see and feel 1 time, than read
+              10 times.
+            </p>
+          </div>
+          <div class="advantages-wrapper">
+            <ul class="advantages-list">
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">600<span class="advantage__title--plus">+</span></h3>
+                Happy clients a day
+              </li>
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">50<span class="advantage__title--plus">+</span></h3>
+                Awards for great service
+              </li>
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">20<span class="advantage__title--plus">+</span></h3>
+                Best barbers of Kyiv
+              </li>
+              <li class="advantages-list__item advantage">
+                <h3 class="advantage__title">100<span class="advantage__title--plus">+</span></h3>
+                Gifts for regulars
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section team" id="team">
+        <div class="container team__container">
+          <p class="pre-title">For real connoisseurs of the climate</p>
+          <h2 class="section__title team__title">Our Masters</h2>
+          <ul class="team-list">
+            <li class="team-list__item master">
+              <picture>
+                <source
+                  srcset="./images/team/desktop/john.webp 1x, ./images/team/desktop/john@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/desktop/john.jpg 1x, ./images/team/desktop/john@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/tablet/john.webp 1x, ./images/team/tablet/john@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/tablet/john.jpg 1x, ./images/team/tablet/john@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/mobile/john.webp 1x, ./images/team/mobile/john@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/team/mobile/john.jpg 1x, ./images/team/mobile/john@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/team/desktop/john.jpg" alt="barber treams beard" />
+              </picture>
+              <h3 class="master__name">John Smith</h3>
+              <p class="master__title">Extreme barber</p>
+              <ul class="master__soc-list soc-list">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="instagram" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="twitter" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link"
+                    ><svg class="facebook" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="linkedin" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="team-list__item master">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/alan.webp       1x,
+                    ./images/team/desktop/michele@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/michele.jpg    1x,
+                    ./images/team/desktop/michele@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/michele.webp    1x,
+                    ./images/team/tablet/michele@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/michele.jpg    1x,
+                    ./images/team/tablet/michele@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/michele.webp    1x,
+                    ./images/team/mobile/michele@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/michele.jpg    1x,
+                    ./images/team/mobile/michele@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/team/desktop/michele.jpg" alt="barber treams beard" />
+              </picture>
+              <h3 class="master__name">Michele Doe</h3>
+              <p class="master__title">Extreme barber</p>
+              <ul class="master__soc-list soc-list">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="instagram" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="twitter" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link"
+                    ><svg class="facebook" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="linkedin" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="team-list__item master">
+              <picture>
+                <source
+                  srcset="./images/team/desktop/alan.webp 1x, ./images/team/desktop/alan@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/desktop/alan.jpg 1x, ./images/team/desktop/alan@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team/tablet/alan.webp 1x, ./images/team/tablet/alan@2x.webp 2x"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/tablet/alan.jpg 1x, ./images/team/tablet/alan@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team/mobile/alan.webp 1x, ./images/team/mobile/alan@2x.webp 2x"
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/team/mobile/alan.jpg 1x, ./images/team/mobile/alan@2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/team/desktop/alan.jpg" alt="barber treams beard" />
+              </picture>
+              <h3 class="master__name">Alan Black</h3>
+              <p class="master__title">Extreme barber</p>
+              <ul class="master__soc-list soc-list">
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="instagram" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="twitter" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link"
+                    ><svg class="facebook" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-list__item">
+                  <a href="" class="soc-list__link">
+                    <svg class="linkedin" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin" class="soc-list__icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section gallery">
+        <div class="container">
+          <p class="pre-title gallery__pre-title">In latin "Barba" means "Beard</p>
+          <h2 class="section__title gallery__title visually-hidden">Barbershop Gallery</h2>
+          <ul class="gallery-list">
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/desktop/treaming.webp    1x,
+                    ./images/gallery/desktop/treaming@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/desktop/treaming.jpg    1x,
+                    ./images/gallery/desktop/treaming@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/treaming.webp    1x,
+                    ./images/gallery/tablet/treaming@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/treaming.jpg    1x,
+                    ./images/gallery/tablet/treaming@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/treaming.webp    1x,
+                    ./images/gallery/mobile/treaming@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/treaming.jpg    1x,
+                    ./images/gallery/mobile/treaming@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/desktop/treaming.jpg" alt="barber is treaming hair" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/desktop/foaming.webp    1x,
+                    ./images/gallery/desktop/foaming@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/desktop/foaming.jpg    1x,
+                    ./images/gallery/desktop/foaming@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/foaming.webp    1x,
+                    ./images/gallery/tablet/foaming@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/foaming.jpg    1x,
+                    ./images/gallery/tablet/foaming@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/foaming.webp    1x,
+                    ./images/gallery/mobile/foaming@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/foaming.jpg    1x,
+                    ./images/gallery/mobile/foaming@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/desktop/foaming.jpg" alt="barber is foaming beard" />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/desktop/preparing.webp    1x,
+                    ./images/gallery/desktop/preparing@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/desktop/preparing.jpg    1x,
+                    ./images/gallery/desktop/preparing@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/preparing.webp    1x,
+                    ./images/gallery/tablet/preparing@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/preparing.jpg    1x,
+                    ./images/gallery/tablet/preparing@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/preparing.webp    1x,
+                    ./images/gallery/mobile/preparing@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/preparing.jpg    1x,
+                    ./images/gallery/mobile/preparing@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img
+                  src="./images/gallery/desktop/preparing.jpg"
+                  alt="barber is preparing client for shaving"
+                />
+              </picture>
+            </li>
+            <li class="gallery-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/desktop/shaving.webp    1x,
+                    ./images/gallery/desktop/shaving@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/desktop/shaving.jpg    1x,
+                    ./images/gallery/desktop/shaving@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/shaving.webp    1x,
+                    ./images/gallery/tablet/shaving@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/tablet/shaving.jpg    1x,
+                    ./images/gallery/tablet/shaving@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/shaving.webp    1x,
+                    ./images/gallery/mobile/shaving@2x.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/mobile/shaving.jpg    1x,
+                    ./images/gallery/mobile/shaving@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767.98px)"
+                />
+                <img src="./images/gallery/desktop/shaving.jpg" alt="barber is shaving client" />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="section-wrapper--background-mod">
+        <div class="sections-wrapper">
+          <section class="reservation" id="reservation">
+            <div class="container reservation__container">
+              <h2 class="section__title section__title--dark reservation__title">Reserve</h2>
+              <form class="appointment-form">
+                <div class="appointment-form__wrapper">
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    class="appointment-form__textfield"
+                    placeholder=" "
+                    autocomplete="off"
+                  />
+                  <label for="user-name" class="appointment-form__label">name*</label>
+                </div>
+                <div class="appointment-form__wrapper">
+                  <input
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    class="appointment-form__textfield"
+                    placeholder=" "
+                    autocomplete="off"
+                  />
+                  <label for="user-tel" class="appointment-form__label">phone number*</label>
+                </div>
+                <div class="appointment-form__wrapper">
+                  <textarea
+                    id="user-comment"
+                    name="user-comment"
+                    class="appointment-form__textarea"
+                    placeholder=" "
+                  ></textarea>
+                  <label for="user-comment" class="appointment-form__label">message</label>
+                </div>
+                <button type="submit" class="btn appointment-form__btn appointment-form__btn--dark">
+                  send
+                </button>
+              </form>
+            </div>
+          </section>
+          <section class="section contacts" id="contacts">
+            <div class="container contacts__container">
+              <h2 class="section__title section__title--dark contacts__title">Contacts</h2>
+              <address class="address">
+                <a href="" class="address__location address__link">
+                  <svg width="24" height="24" class="address__icon">
+                    <use href="./images/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  Vasylkivska str., 7A, Kyiv, 08132
+                </a>
+                <a href="tel:+380441111111" class="address__tel address__link">
+                  <svg width="24" height="24" class="address__icon">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 044 111 11 11
+                </a>
+                <a href="mailto:barbershop@email.com" class="address__email address__link">
+                  <svg width="24" height="24" class="address__icon">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  barbershop@email.com
+                </a>
+              </address>
+              <div class="contacts__subsection">
+                <h3 class="subsection__title opening-hours">Opening hours</h3>
+                <p class="opening-hours__text">Everyday from 9:00 to 22:00</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="copyright">&copy; Copyright 2022</p>
+        <ul class="footer__soc-list footer-soc-list">
+          <li class="footer-soc-list__item">
+            <a href="" class="footer__link footer-soc-list__link">Instagram</a>
+          </li>
+          <li class="footer-soc-list__item"><a href="" class="footer__link">Youtube</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/mob-menu.js"></script>
+  </body>
+</html>

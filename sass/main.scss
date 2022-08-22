@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/normalize';
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+///////////////////////////
+@import './components/btn';
+@import './components/btn-link';
+@import './components/soc-list';
+@import './components/master';
+@import './components/backdrop';
+@import './components/mob-menu';
+@import './components/sections-wrapper';
+///////////////////////////
+@import './layout/header';
+@import './layout/hero';
+@import './layout/barbershop';
+@import './layout/prices';
+@import './layout/advantages';
+@import './layout/team';
+@import './layout/gallery';
+@import './layout/reservation';
+@import './layout/contacts';
+@import './layout/footer';

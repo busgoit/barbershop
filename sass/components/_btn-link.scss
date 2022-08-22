@@ -1,0 +1,32 @@
+.btn-link {
+  text-align: center;
+  display: block;
+  width: 160px;
+  min-height: 40px;
+  padding: 12px 20px;
+
+  font-family: inherit;
+  @include font(12px, 600, 1.3333, 0.09em);
+  text-transform: uppercase;
+
+  color: $title-color;
+
+  background-color: transparent;
+  border: 1px solid $brand-color;
+  border-radius: 25px;
+
+  @include transition(color, background-color);
+
+  &--dark {
+    color: $secondary-brand-color;
+  }
+  &:hover,
+  &:focus {
+    color: $secondary-brand-color;
+    background-color: $brand-color;
+  }
+}
+.prices-btn-link {
+  margin-left: auto;
+  margin-right: auto;
+}

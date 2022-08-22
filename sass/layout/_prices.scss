@@ -1,0 +1,102 @@
+.prices {
+  background-color: #111319;
+  background-image: url(../images/background/prices/prices-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/background/prices/prices-bg-mobile@2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background/prices/prices-bg-tablet.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/prices/prices-bg-tablet@2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background/prices/prices-bg-desktop.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background/prices/prices-bg-desktop@2x.png);
+    }
+  }
+  &__title {
+    margin-bottom: 44px;
+    @include font(42px, 700, 1.17, 0.03em);
+    @media screen and (max-width: 479.98px) {
+      @include font(8.5vw);
+    }
+  }
+}
+.prices-list {
+  padding: 30px;
+  margin-bottom: 50px;
+
+  @include font(14px, 400, 2.14, 0.02em);
+  color: $primary-text-color;
+  background-image: linear-gradient(
+    to right,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 50%,
+    #090b13 75%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+  @media screen and (max-width: 479.98px) {
+    @include font(3vw);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(18px);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 255px;
+    padding: 0;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 1199.98px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    @media screen and (min-width: 1200px) {
+      & {
+        padding: 10px 40px;
+      }
+      &:nth-child(4n + 1) {
+        padding-top: 30px;
+      }
+      &:nth-child(4n + 4) {
+        padding-bottom: 30px;
+      }
+      // &:nth-last-child(-n + 4) {
+      //   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+      // }
+    }
+  }
+}
+.price {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  &::before {
+    content: '';
+    margin-left: 6px;
+    margin-right: 6px;
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+  }
+}
+
+.prices__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
